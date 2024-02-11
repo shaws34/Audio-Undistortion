@@ -1,0 +1,97 @@
+2024-02-11 02:04:17,802 [TestLogger] [ERROR]	This is an error message
+	Stack Trace:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+		  File "<frozen runpy>", line 88, in _run_code
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\__main__.py", line 18, in <module>
+    main(module=None)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\main.py", line 105, in __init__
+    self.runTests()
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\main.py", line 281, in runTests
+    self.result = testRunner.run(self.test)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\runner.py", line 240, in run
+    test(result)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 122, in run
+    test(result)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 122, in run
+    test(result)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 122, in run
+    test(result)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 690, in __call__
+    return self.run(*args, **kwds)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+		  File "C:\Users\samue\Documents\Sam's School\Audio Undistortion\tests\test_custom_logger.py", line 39, in test_error_logs_include_stack_trace
+    self.logger.error(log_message)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+		  File "C:\Users\samue\Documents\Sam's School\Audio Undistortion\utils\logging\custom_logger_handler.py", line 24, in emit
+    record.stack_info = '\tStack Trace:\n' + '\t\t'.join(traceback.format_stack())
+
+2024-02-11 02:04:17,804 [TestLogger] [ERROR]	This is an exception message
+Traceback (most recent call last):
+  File "C:\Users\samue\Documents\Sam's School\Audio Undistortion\tests\test_custom_logger.py", line 23, in test_exceptions_logs_include_stack_trace
+    raise ValueError("Test exception")
+ValueError: Test exception
+	Stack Trace:
+  File "<frozen runpy>", line 198, in _run_module_as_main
+		  File "<frozen runpy>", line 88, in _run_code
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\__main__.py", line 18, in <module>
+    main(module=None)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\main.py", line 105, in __init__
+    self.runTests()
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\main.py", line 281, in runTests
+    self.result = testRunner.run(self.test)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\runner.py", line 240, in run
+    test(result)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 122, in run
+    test(result)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 122, in run
+    test(result)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\suite.py", line 122, in run
+    test(result)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 690, in __call__
+    return self.run(*args, **kwds)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 634, in run
+    self._callTestMethod(testMethod)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\unittest\case.py", line 589, in _callTestMethod
+    if method() is not None:
+		  File "C:\Users\samue\Documents\Sam's School\Audio Undistortion\tests\test_custom_logger.py", line 25, in test_exceptions_logs_include_stack_trace
+    self.logger.exception(log_message)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1574, in exception
+    self.error(msg, *args, exc_info=exc_info, **kwargs)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1568, in error
+    self._log(ERROR, msg, args, **kwargs)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1684, in _log
+    self.handle(record)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1700, in handle
+    self.callHandlers(record)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1762, in callHandlers
+    hdlr.handle(record)
+		  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.752.0_x64__qbz5n2kfra8p0\Lib\logging\__init__.py", line 1028, in handle
+    self.emit(record)
+		  File "C:\Users\samue\Documents\Sam's School\Audio Undistortion\utils\logging\custom_logger_handler.py", line 24, in emit
+    record.stack_info = '\tStack Trace:\n' + '\t\t'.join(traceback.format_stack())
+
+2024-02-11 02:04:17,806 [TestLogger] [INFO]	This is an info message
