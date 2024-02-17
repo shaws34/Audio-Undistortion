@@ -2,6 +2,9 @@ flask
 pyodbc
 torch
 torchaudio
+soundfile
 numpy
 scipy
 pandas
+matplotlib
+IPython

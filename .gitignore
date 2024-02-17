@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+
+# Flask session tokens
+.flask_session/
+
+# Instance folder for Flask
+instance/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyCharm, VS Code, and other IDEs
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and data
+logs/
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# Operating System generated files
+.DS_Store
+Thumbs.db
+
+# Training artifacts
+training/saved_models/
+training/data/
+
+
+# Config files containing sensitive information
+config.py
+
+# Docker
+Dockerfile
+
+# Include empty directories
+!training/
+!training/saved_models/.gitkeep
+!training/data/.gitkeep
+!logs/.gitkeep
+
