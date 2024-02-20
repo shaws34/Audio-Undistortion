@@ -41,20 +41,9 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Training artifacts
-training/saved_models/
-training/data/
-
-
 # Config files containing sensitive information
 config.py
 
 # Docker
 Dockerfile
-
-# Include empty directories
-!training/
-!training/saved_models/.gitkeep
-!training/data/.gitkeep
-!logs/.gitkeep
 

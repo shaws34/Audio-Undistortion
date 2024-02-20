@@ -1,2 +1,3 @@
-python -m unittest discover -s tests -p "tests/test_*.py"
+set PYTHONPATH=".conda"
+%PYTHONPATH%\python -m unittest discover -s tests -p test_*.py
 

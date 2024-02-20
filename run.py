@@ -1,1 +1,3 @@
-print(3)
+from training.train import train
+
+train()

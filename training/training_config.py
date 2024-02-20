@@ -1,4 +1,5 @@
 # training_config.py
+import torch
 
 # General Training Configuration
 config = {

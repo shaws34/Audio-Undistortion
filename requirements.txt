@@ -2,9 +2,12 @@ flask
 pyodbc
 torch
 torchaudio
+torchvision
+-i https://download.pytorch.org/whl/cu121
 soundfile
 numpy
 scipy
 pandas
 matplotlib
+notebook
 IPython

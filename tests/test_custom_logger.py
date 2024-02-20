@@ -2,8 +2,6 @@
 import unittest
 import logging
 from utils.logging.custom_logger_handler import CustomLoggerHandler
-from io import StringIO
-
 
 class TestCustomLoggerHandler(unittest.TestCase):
     def setUp(self):

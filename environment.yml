@@ -1,0 +1,33 @@
+name: audio-undistortion
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python
+  - pytorch
+  - torchaudio
+  - pysoundfile
+  - pytorch-cuda=12.1
+  - numpy
+  - pandas
+  - matplotlib
+  - plotly
+  - seaborn
+  - scikit-learn
+  - scipy
+  - librosa
+  - jupyter
+  - notebook
+  - jupyterlab
+  - ipykernel 
+  - IPython
+  - ipywidgets
+  - tqdm
+  - pydub
+  - boto3
+  - requests
+  - flask
+  - conda-forge::ffmpeg<7
+
+  
