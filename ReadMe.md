@@ -1,5 +1,5 @@
 # View My Project in Google Colab
-Google Colab - https://colab.research.google.com/drive/1elEfOHB1IhrtlxXKvk0_FZoTHu766xhe?usp=sharing
+[Google Colab](https://colab.research.google.com/drive/1elEfOHB1IhrtlxXKvk0_FZoTHu766xhe?usp=sharing)
 
 This GitHub project is still in progress, but you can view the core ideas and functionality by selecting the above link and going through the project.
 
